@@ -1,0 +1,38 @@
+:root {
+  --text: #6b6375;
+  --text-h: #1a1a2e;
+  --bg: #fafafa;
+  --border: #e5e4e7;
+  --code-bg: #f0f0f0;
+  --accent: #e63946;
+  --sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --mono: 'SF Mono', 'Fira Code', 'JetBrains Mono', ui-monospace, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: #f3f4f6;
+    --bg: #0f0f14;
+    --border: #2a2a35;
+    --code-bg: #1a1a24;
+    --accent: #ef4444;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100svh;
+}
