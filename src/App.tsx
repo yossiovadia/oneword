@@ -36,6 +36,12 @@ function App() {
       } else if (e.code === 'ArrowRight') {
         e.preventDefault();
         stepForward();
+      } else if (e.code === 'ArrowUp') {
+        e.preventDefault();
+        setWpm(w => Math.min(1000, w + 25));
+      } else if (e.code === 'ArrowDown') {
+        e.preventDefault();
+        setWpm(w => Math.max(100, w - 25));
       } else if (e.code === 'Escape') {
         e.preventDefault();
         reset();
